@@ -1,0 +1,28 @@
+<template>
+  <lightning-card title="getBankList Policy 11">
+    <div>
+      <template if:true={bankDetails}>
+        <ul>
+          <template for:each={bankDetails} for:item="bank">
+            <li key={bank.id}>
+              Bank Name: {bank.name}<br/>
+              Bank Branch: {bank.branch}<br/>
+              Bank IFSC Code: {bank.ifscCode}
+            </li>
+          </template>
+        </ul>
+      </template>
+      <template if:false={bankDetails}>
+        <p>No Bank Details Found</p>
+      </template>
+    </div>
+  </lightning-card>
+</template>
+
+<!-- JS File -->
+import { LightningElement, wire } from 'lwc';
+import getBankList from '@salesforce/apex/BankController.getBankList';
+
+export default class BankList extends LightningElement {
+  @wire(getBankList, { policyId: 11 }) bankDetails;
+}

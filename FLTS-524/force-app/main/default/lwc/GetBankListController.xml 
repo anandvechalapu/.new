@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApexClass xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>46.0</apiVersion>
+    <status>Active</status>
+    <isExposed>true</isExposed>
+    <lwc>
+        <design>
+            <name>getBankList</name>
+            <resourceName>getBankList</resourceName>
+            <source>getBankList.html</source>
+        </design>
+        <controller>
+            <name>getBankList</name>
+            <methods>
+                <method>
+                    <name>getBankList</name>
+                    <parameters>
+                        <parameter>
+                            <name>policyId</name>
+                            <type>String</type>
+                        </parameter>
+                    </parameters>
+                    <requestMapping>/getBankList/{policyId}</requestMapping>
+                </method>
+            </methods>
+            <source>getBankList.js</source>
+        </controller>
+        <styles>
+            <style>getBankList.css</style>
+        </styles>
+    </lwc>
+</ApexClass>
