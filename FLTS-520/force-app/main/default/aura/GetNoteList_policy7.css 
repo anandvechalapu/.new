@@ -1,0 +1,52 @@
+/* CSS file for Aura Component GetNoteList_policy 7 */
+
+.get-note-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+.get-note-list-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.get-note-list-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.get-note-list-input-field {
+  width: 300px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 1rem;
+}
+
+.get-note-list-submit {
+  background-color: #0099ff;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.get-note-list-submit:hover {
+  background-color: #00ccff;
+}
+
+.get-note-list-error {
+  color: #ff0000;
+  font-size: 1rem;
+  font-weight: bold;
+}

@@ -1,0 +1,14 @@
+<aura:component>
+    <aura:attribute name="policyId" type="String" />
+    <aura:attribute name="noteList" type="Object[]" />
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+    <aura:method name="getNoteList" action="{!c.getNoteList}">
+        <aura:attribute name="policyId" type="String" />
+    </aura:method>
+    
+    <aura:method name="updateNoteList" action="{!c.updateNoteList}">
+        <aura:attribute name="noteList" type="Object[]" />
+    </aura:method>
+</aura:component>
